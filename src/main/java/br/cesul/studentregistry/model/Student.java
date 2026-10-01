@@ -17,6 +17,13 @@ public class Student {
         this.active = true;
     }
 
+    public Student( String name, String email, double grade,  boolean active) {
+        this();
+        this.name =  name;
+        this.email = email;
+        this.grade = grade;
+        this.active = active;
+    }
     public String getId() {
         return id;
     }
