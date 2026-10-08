@@ -6,7 +6,7 @@ package br.cesul.studentregistry.repository;
 //          - findAll(),Save(), toggle...(), update()
 //2- quais comportamentos minimos devemos provar c os testes?
 //      toda vez q der save+findAll, deve aumentar a lista
-//      toda vez q chamar o toggleFlag deve alternar o booleano 'acitve' do documento em questao
+//      toda vez q chamar o toggleFlag deve alternar o booleano 'active' do documento em questao
 //      chamando update , deve alterar o campo grade do documento em questao
 
 //Decisões a serem tomadas

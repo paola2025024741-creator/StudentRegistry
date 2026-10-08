@@ -27,7 +27,7 @@ public class StudentRepository {
         this(db, "students");
     }
 
-    void deleteAll(){
+    public void deleteAll(){
         //delete all
         // oque faz: apaga tds os documentos da coleção em questão
         // por que existe: para que cada teste comece com uma base vazia evitando vazamento de estados de testes anteriores
