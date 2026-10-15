@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 
 
-<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.cesul.studentregistry.view.StudentListView">
    <children>
       <BorderPane prefHeight="600.0" prefWidth="600.0">
          <top>
@@ -47,7 +47,7 @@
                   </HBox>
                   <HBox prefHeight="62.0" prefWidth="600.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="17.0" prefWidth="74.0" text="Adicionar">
+                        <Button mnemonicParsing="false" prefHeight="17.0" prefWidth="74.0" text="Adicionar" onAction="#onAdd">
                            <padding>
                               <Insets right="10.0" />
                            </padding>
@@ -55,7 +55,7 @@
                               <Insets left="10.0" right="10.0" />
                            </HBox.margin>
                         </Button>
-                        <Button fx:id="btnToggle" mnemonicParsing="false" prefHeight="17.0" prefWidth="99.0" text="Alternar Ativo">
+                        <Button fx:id="btnToggle" mnemonicParsing="false" prefHeight="17.0" prefWidth="99.0" text="Alternar Ativo" onAction="#onToggle">
                            <padding>
                               <Insets left="10.0" />
                            </padding>
@@ -63,7 +63,7 @@
                               <Insets left="10.0" right="10.0" />
                            </HBox.margin>
                         </Button>
-                        <Button fx:id="btnUpdate" alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="104.0" text="Atualizar Nota">
+                        <Button fx:id="btnUpdate" alignment="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="104.0" text="Atualizar Nota" onAction="#onUpdate">
                            <padding>
                               <Insets left="10.0" />
                            </padding>
@@ -102,7 +102,7 @@
             <HBox prefHeight="61.0" prefWidth="600.0" BorderPane.alignment="CENTER">
                <children>
                   <ProgressIndicator fx:id="progress" progress="0.0" visible="false" />
-                  <Label text="Label">
+                  <Label fx:id="lblError" text="Label">
                      <padding>
                         <Insets left="20.0" top="10.0" />
                      </padding>

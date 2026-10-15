@@ -24,7 +24,7 @@ public class Validators {
         int at = s.indexOf("@"); //pega posicao do @ ( se nao tiver, -1)
         int dot = s.lastIndexOf("."); // posição do ultimo ponto , ou -1
 
-        return at > 0 && dot > at +1 && dot < s.length()-1;
+        return at > 0 && dot > at +1 && dot < s.length() - 1;
     }
 
     public static boolean inRange(double value, double min, double max){
